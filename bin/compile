@@ -12,7 +12,7 @@ VENDOR_DIR="$BUILD_DIR/vendor"
 mkdir -p $VENDOR_DIR
 INSTALL_DIR="$VENDOR_DIR/imagemagick"
 mkdir -p $INSTALL_DIR
-IMAGE_MAGICK_VERSION="${IMAGE_MAGICK_VERSION:-7.0.8-25}"
+IMAGE_MAGICK_VERSION="${IMAGE_MAGICK_VERSION:-7.0.8-23}"
 CACHE_FILE="$CACHE_DIR/imagemagick-$IMAGE_MAGICK_VERSION.tar.gz"
 
 if [ ! -f $CACHE_FILE ]; then
@@ -75,7 +75,7 @@ echo "export PATH=$ACTUAL_INSTALL_PATH/bin:\$PATH" >> $PROFILE_PATH
 echo "export LD_LIBRARY_PATH=$ACTUAL_INSTALL_PATH/lib:\$LD_LIBRARY_PATH" >> $PROFILE_PATH
 echo "export MAGICK_CONFIGURE_PATH=$ACTUAL_INSTALL_PATH" >> $PROFILE_PATH
 
-# DOWNLOAD_URL="https://github.com/ImageMagick/ImageMagick/archive/7.0.8-25.tar.gz"
+# DOWNLOAD_URL="https://github.com/ImageMagick/ImageMagick/archive/7.0.8-23.tar.gz"
 
 # echo "DOWNLOAD_URL = " $DOWNLOAD_URL | indent
 
